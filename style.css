@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+}
+#left{
+    position: relative;
+    height: 100%;
+    width: 40%;
+    /* background-color: aqua; */
+}
+#lnav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+}
+#lnavr a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 14px
+}
+#lnavr i{
+    color: royalblue;
+}
+#lnavr{
+    display: flex;
+    align-items: center;
+}
+#right{ 
+    height: 100%;
+    width: 60%;
+    background-color: aliceblue;
+}
+#rtop{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    background-color: rgb(1, 6, 6);
+}
+#rbottom{
+    height: 50%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1683225841589-33bdde9c9874?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    /* background-color:red; */
+}#rleft{
+    height: 100%;
+    width: 55%;
+    background-image: url(https://images.unsplash.com/photo-1676636936566-e60d61010f3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDgwfHhIeFlUTUhMZ09jfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+}
+#rright{
+    height: 100%;
+    width: 45%;
+    background-color: paleturquoise;
+    background-image: url(https://images.unsplash.com/photo-1644889221400-4f08c310db33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDg1fHhIeFlUTUhMZ09jfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+#textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#textcenter h1{
+    font-size: 90px;
+    font-weight: 900;
+}
+#textcenter p{
+    opacity: .6;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#textcenter a{
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: .6;
+}
+@media(max-width:500px){
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        width: 100%;
+    }
+    #main #right{
+        width: 100%;
+        
+    }
+}
